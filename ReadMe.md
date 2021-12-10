@@ -1,2 +1,0 @@
-#Calculator - Nuemorphism, Skewmorphism
-[========]
