@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: rgb(2, 2, 20);
+}
+
+#calculator{
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:
+        0 0 10vh #0008
+    ;
+    border-radius: 2vh;
+    overflow: hidden;
+    background-color: rgb(6, 6, 51);
+    /* This Code Helps To Maintain The Aspect Ratio Of The Element */
+    max-width: 399px;
+    min-width: 399px;
+    max-height: 545.297px;
+    min-height: 545.297px;
+}
+
+#main_calculator_input_container{
+    height: 20%;
+}
+
+#main_calculator_input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 5vh;
+    padding:0 3vh;
+    box-shadow:
+        inset 2vh 2vh 2.5vh #0008,
+        inset -2vh -2vh 2.5vh #eee1
+    ;
+    background-color: rgb(6, 6, 51);
+    color: white;
+    border-radius: 2vh;
+}
+
+#main_calculator_input::placeholder{
+    color: white;
+}
+
+#buttons{
+    height: 80%;
+    background-color: rgb(6, 6, 51);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.buttons{
+    font-size: 3vh;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow:
+        inset 2vh 2vh 2.5vh #0008,
+        inset -2vh -2vh 2.5vh #eee1,
+        0 0 3vh #0003
+    ;
+    background-color: rgb(11, 11, 71);
+    color: white;
+    border-radius: 50%;
+    transition: box-shadow 0.2s;
+}
+
+.buttons:hover{
+    box-shadow:
+        inset -2vh -2vh 2.5vh #0008,
+        inset 2vh 2vh 2.5vh #eee1,
+        0 0 3vh #0003
+    ;
+}
